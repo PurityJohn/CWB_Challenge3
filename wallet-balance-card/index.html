@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@100;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        
+    .container1{
+      display:flex;
+      text-align: center;
+      justify-content: center;
+      position: relative;
+      height: 300px;
+      width: 800px;
+      border-radius: 20px;
+      background-image: linear-gradient(to bottom right, #9356C3, #351450);
+      margin: 50px;
+    }
+
+    .container2{
+      display:flex;
+      text-align:left;
+      justify-content: left;
+      position: relative;
+      height: 300px;
+      width: 800px;
+      border-radius: 20px;
+      background-image: linear-gradient(to bottom right, #9356C3, #351450);
+      margin: 50px;
+    }
+
+    .inner-cont{
+      display: grid;
+      flex-direction: column;
+      padding: 50px;
+      row-gap: 15px;
+    }
+
+    img{
+        position: absolute;
+        opacity: 0.3;
+      align-items:right;
+        width: 100;
+    }
+    img .pin2{
+        position: relative;
+        opacity: 0.3;
+      align-items:right;
+        width: 100;
+    }
+    .inner-cont .real-amount{
+        font-family: 'inter';
+      font-weight: 600;
+      color: white;
+      font-size: 50px;
+    }
+
+    .lower .slash-amount{
+        font-family:'inter';
+        font-weight: 00;
+        color:hsla(0, 0%, 100%, 0.6);
+        font-size: 25px;
+    }
+
+    .lower .old-bal{
+        font-family:'inter';
+        font-weight: 500;
+        color:hsla(0, 0%, 100%, 0.6);
+        font-size: 20px;
+    }
+
+    .inner-cont .avail{
+      font-family: 'inter';
+      font-weight: 300;
+      color: white;
+      font-size: 30px;
+    }
+
+    
+    .inner-cont2{
+      display: grid;
+      flex-direction: column;
+      padding: 50px;
+      row-gap: 15px;
+    }
+
+
+    .inner-cont2 .real-amount2{
+        font-family: 'inter';
+      font-weight: 600;
+      color: white;
+      font-size: 50px;
+    }
+
+    .lower2 .slash-amount2{
+        font-family:'inter';
+        font-weight: 00;
+        color:hsla(0, 0%, 100%, 0.6);
+        font-size: 25px;
+    }
+
+    .lower2 .old-bal2{
+        font-family:'inter';
+        font-weight: 500;
+        color:hsla(0, 0%, 100%, 0.6);
+        font-size: 20px;
+    }
+
+    .inner-cont2 .avail2{
+      font-family: 'inter';
+      font-weight: 300;
+      color: white;
+      font-size: 30px;
+    }
+        
+    </style>
+
+    <title>CWB Program | Stats preview card component</title>
+</head>
+
+<body>
+    <div class="container1">
+            <div class="inner-cont">
+                <span class="avail">Available Balance</span>
+                <span class="real-amount">N216,990</span>
+                <div class="lower">
+                    <span class="old-bal">Unavailable Balance</span><br>
+                    <del class="slash-amount">N216,990</del>
+                </div>
+                <img src="images/wallet.svg">
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+            <div class="inner-cont2">
+                <span class="avail2">Available Balance</span>
+                <span class="real-amount2">N216,990</span>
+                <div class="lower2">
+                    <span class="old-bal2">Unavailable Balance</span><br>
+                    <del class="slash-amount2">N216,990</del>
+                </div>
+            </div>
+            <img class="pin2" src="images/wallet.svg">
+    </div>
+</body>
+</html>
